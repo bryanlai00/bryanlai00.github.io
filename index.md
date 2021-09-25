@@ -3,12 +3,7 @@ layout: tab
 ---
 <center>
 <div class="card shadow p-3 mb-5 black col-md-5">
-<div class="card-title">
 <h4>Blog</h4>
-<div class="nd">
-Each card represents a post, with its respective Title, Number and Date.
-</div>
-</div>
 </div>
 </center>
 <br>
