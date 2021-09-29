@@ -2,37 +2,58 @@
 layout: tab
 ---
 <center>
-<div class="card shadow p-3 mb-5 black col-md-7">
-<h4>Blog</h4>
+<div class="card shadow p-3 mb-5 col-md-8 black">
+<h4><img src="img/me.jpg" class="face rounded-circle" hspace="20"> Hi, I'm Bryan.</h4>
 </div>
 </center>
-{% for post in site.posts) %}
-  {% assign remainder = forloop.index0 | modulo: 3 %}
-  {% if remainder == 0 and forloop.index0 != 1 %}
-  </div>
-  {% endif %}
-  {% if remainder == 0 %}
-  <div class="row"> 
-  {% endif %}
-  {% if remainder == 1 %}
-  <div class="card black shadow-lg p-3 mb-5 col-md-4" style="margin-left: 50px;">
-  {% else %}
-  <div class="card black shadow-lg p-3 mb-5 col-md-3" style="margin-left: 50px;">
-  {% endif %}
-    <div class="card-title">
-      {{ post.title }}
-      {% if post.image %}
-      <img src="{{ post.image }}" class="media rounded-circle" style="float: right; opacity: 0.8">
-      {% endif %}
-    <div class="nd">
-      Blog Post No. {{ post.number }}
-      <br>
-      Date: {{ post.date | date_to_string }}
-    </div>
-    </div>
-    <div class="card-body">
-      {{post.content}}
-    </div>
-  </div>
-{% endfor %}
+
+
+<div class="row">
+<div class="card shadow p-3 mb-5 col-md-3 black" style="margin-left: 50px;">
 <br>
+<div class="card-title">
+About Me
+</div>
+<div class="card-body">
+I'm a front and back-end web developer. Throughout my CS Journey, I have become familiar with a multitude of programming languages including Ruby on Rails, Java, Python, and Javascript. I am also proficient in HTML, CSS and Git. 
+<br>
+<br>
+Currently, I attend Stony Brook University majoring in both Computer Science and Applied Math and Sciences. In addition to this, I am looking for CS internships/jobs, so if you wish to contact me regarding this, please do! 
+</div> 
+</div>
+
+
+<div class="card shadow p-3 mb-5 col-md-4 black" style="margin-left: 40px;">
+<br>
+<div class="card-title">
+Some CS Works/Projects:
+</div>
+<div class="card-body">
+<b style="font-size: 25px;"> <u>Team Manager:</u> <a href="https://github.com/StuyPulse/teammanager/" target="_blank"><img src="img/github.png" class="media rounded-circle" style="width: 25px; height: 25px;"></a> </b>
+<br>
+<b> <u>Description:</u> </b> An open source application designed to contain records and manage information with students on the Stuyvesant Robotics Team. Built with JavaScript, React, and the Twilio SMS API.
+<br>
+<b> <u>Uses:</u> </b> Google OAuth for login purposes, Rails Action Controllers and Views as well as CSS, HTML, Ruby and Javascript from open source libraries.
+<br>
+<br>
+<b style="font-size: 25px;"> <u>Tweeter:</u> <a href="https://github.com/bryanlai00/Tweeter" target="_blank"><img src="img/github.png" class="media rounded-circle" style="width: 25px; height: 25px;"></a> </b>
+<br>
+<b><u>Description:</u> </b>A web application built to visualize specific data from tweets all around the world. Built with Javascript, HTML, CSS, Google Maps API and Twitter Developers API.
+<br>
+Takes in a search option and tweets with the same parameters. With the Google Maps API, Google Earth generates markers that provide information for tweets.
+</div>
+</div> 
+
+
+<div class="card shadow p-3 mb-5 col-md-3 black" style="margin-left: 40px;">
+<br>
+<div class="card-title">
+About the Website: <a href="https://github.com/bryanlai00/bryanlai00.github.io" target="_blank"><img src="img/github.png" class="media rounded-circle" style="width: 40px; height: 40px;"></a>
+</div>
+<div class="card-body">
+Rather than relying on a complex content management system to serve content, this website is built with Jekyll, a “simple, blog aware, static site generator” written in Ruby. As a purely static site, no server-side processing is necessary after the site is initially built. Furthermore, this site is hosted on GitHub Pages, resulting in extremely fast page load times. Most of the content is formatted with Markdown, which gets converted into HTML when the site is built. 
+<br>
+<br>
+Interested in how my site is built? It's completely open source so feel free to take a look in order to learn more about Jekyll!
+</div>
+</div> 
