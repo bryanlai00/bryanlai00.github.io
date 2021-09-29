@@ -11,6 +11,11 @@
         width: 175px;
 }
 
+.errorimg {
+        width: 400px;
+        height: 300px;
+}
+
 .card {
         transition: transform .3s;
 }
@@ -27,6 +32,7 @@
         background-image: url(../img/flowers.gif);
         background-size: cover;
         background-repeat: no-repeat;
+        overflow-x:hidden;
 }
 .front {
         background-color: #F1E6E6;
