@@ -15,10 +15,10 @@ layout: tab
 About Me
 </div>
 <div class="card-body">
-I'm a front and back-end web developer. Throughout my CS Journey, I have become familiar with a multitude of programming languages including Ruby on Rails, Java, Python, and Javascript. I am also proficient in HTML, CSS, Git. 
+I'm a front and back-end web developer. Throughout my CS Journey, I have become familiar with a multitude of programming languages including Ruby on Rails, Java, Python, and Javascript. I am also proficient in HTML, CSS and Git. 
 <br>
 <br>
-Currently, I attend Stuyvesant High School and am planning to major in Computer Science while in college to earn my Bachelor's Degree.
+Currently, I attend Stony Brook University majoring in both Computer Science and Applied Math and Sciences. In addition to this, I am looking for CS internships/jobs, so if you wish to contact me regarding this, please do! 
 </div> 
 </div>
 
