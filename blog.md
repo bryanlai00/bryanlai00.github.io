@@ -3,7 +3,7 @@ layout: tab
 ---
 <center>
 <div class="card shadow p-3 mb-5 black col-md-7">
-<h4>Blog</h4>
+<h4 class="focus">Blog</h4>
 </div>
 </center>
 {% for post in site.posts) %}
@@ -15,9 +15,9 @@ layout: tab
   <div class="row"> 
   {% endif %}
   {% if remainder == 1 %}
-  <div class="card black shadow-lg p-3 mb-5 col-md-4" style="margin-left: 50px;">
+  <div class="card black shadow-lg p-3 mb-5 col-md-4 focus" style="margin-left: 50px;">
   {% else %}
-  <div class="card black shadow-lg p-3 mb-5 col-md-3" style="margin-left: 50px;">
+  <div class="card black shadow-lg p-3 mb-5 col-md-3 focus" style="margin-left: 50px;">
   {% endif %}
     <div class="card-title">
       {{ post.title }}

@@ -7,6 +7,24 @@
         font-family: "Comfortaa";
 }
 
+@keyframes focus {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.focus {
+	animation: focus 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
 .face {
         width: 175px;
 }

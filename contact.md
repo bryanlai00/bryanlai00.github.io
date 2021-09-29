@@ -4,7 +4,7 @@ permalink: contact
 ---
 
 <center>
-<div class="card shadow p-3 mb-5 col-md-6 black" style="margin-left: 50px;">
+<div class="card shadow p-3 mb-5 col-md-6 black focus" style="margin-left: 50px;">
 <br>
 <div class="card-title">
 Contact Info

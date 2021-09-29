@@ -3,12 +3,12 @@ layout: tab
 ---
 <center>
 <div class="card shadow p-3 mb-5 col-md-8 black">
-<h4><img src="img/me.jpg" class="face rounded-circle" hspace="20"> Hi, I'm Bryan.</h4>
+<h4 class="focus"><img src="img/me.jpg" class="face rounded-circle" hspace="20"> Hi, I'm Bryan.</h4>
 </div>
 </center>
 
 
-<div class="row">
+<div class="row focus">
 <div class="card shadow p-3 mb-5 col-md-3 black" style="margin-left: 50px;">
 <br>
 <div class="card-title">
