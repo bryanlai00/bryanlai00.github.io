@@ -1,0 +1,7 @@
+---
+title: Internship Season
+number: 7
+image: ../img/amazing.png
+---
+It's been almost 3 years since this website was created! I'm back to update this with a long needed blog post for CSE 300 Technical Communication. Aside from that, a lot has happened - I had an internship over the summer focusing on full-stack web development, managing documentation, communicating with partner API companies. Not to mention, I've been also taking much more difficult courses! I've also been breakdancing, poi dancing and managing documents for the Stony Brook Computing Society. After all this, it's about time to look for my 3rd year summer internship. 
+
