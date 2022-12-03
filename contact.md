@@ -10,7 +10,7 @@ permalink: contact
 Contact Info
 <br>
 <a href="https://github.com/bryanlais" target="_blank"><img src="img/github.png" class="media rounded-circle"></a>
-<a href="https://linkedin.com/bryanlais" target="_blank"><img src="img/linkedin.png" class="media rounded-circle"></a>
+<a href="https://www.linkedin.com/in/bryanlais/" target="_blank"><img src="img/linkedin.png" class="media rounded-circle"></a>
 </div>
 <div class="card-body">
 If you have any questions or concerns, you can email me at bryanjlais@gmail.com using the form below.

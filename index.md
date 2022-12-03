@@ -33,7 +33,7 @@ Hi, I'm Bryan.
 Who am I?
 </div>
 <div class="card-body">
-I'm a full-stack web developer and software engineer with knowledge of the following technologies: 
+I'm Bryan! I'm aiming to be a full-stack web developer and/or software development engineer. Aside from this, I'm also a pianist/composer, breakdancer and poi dancer with glowsticks. Leaning towards professionality, below is a list of my knowledge of the following technologies: 
 <br>
 <br>
 <ul style="list-style: none;">
@@ -55,7 +55,7 @@ I'm a full-stack web developer and software engineer with knowledge of the follo
 <div class="card shadow col-md-4 p-3 mb-5 black">
 <br>
 <div class="card-title">
-Where did you learn all this?
+Where did I learn all this?
 </div>
 <div class="card-body">
 I am a 3rd year at Stony Brook University as a Computer Science and Applied Mathematics Major currently looking for CS internships/jobs after taking the following courses:
