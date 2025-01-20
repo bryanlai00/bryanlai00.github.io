@@ -3,10 +3,10 @@ layout: tab
 ---
 <center>
 <br>
-<div class="focus card shadow col-md-4 p-3 mb-5 black">
-<h4>
+<div class="focus card shadow col-md-4 p-3 mb-5 black" style="height: 80px;">
+<h2 class="intro">
 Personal Projects
-</h4>
+</h2>
 </div>
 <div class="row justify-content-center">
       <div class="col-md-4">

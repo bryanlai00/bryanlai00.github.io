@@ -3,8 +3,9 @@
         font-family: Adam;
         src: url(fonts/Adam.otf)
 }
+
 @font-face {
-        font-family: "Comfortaa";
+        font-family: Hollow;  src: url(fonts/Cinzel-Regular.ttf)
 }
 
 @keyframes focus {
@@ -25,7 +26,8 @@
 }
 
 .face {
-        width: 300px;
+        width: 150px;
+        margin-bottom: 20px;
 }
 
 .errorimg {
@@ -41,30 +43,28 @@
             -webkit-transform: scale(1.1); /* Safari 3-8 */
               transform: scale(1.1); 
       }
-.flowers {
-        width: 100%;
-        height: 100%;
-        padding:0;
-        margin:0;
-        background-image: url(../img/type.gif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow-x: hidden;
-        overflow: scroll;
-}
 .front {
         background-color: #F1E6E6;
 }
 p {
         font-family: "Comfortaa";
+        font-weight: 300;
+        opacity: 1 !important;
 }
 html {
         height: 100%;
+        overflow: hidden; /* Disable scrolling completely */
+        height: 100%; /* Ensure content fits within the viewport */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
 }
 body{
-        background-color: #262626;
+        background-color: #0E0D21;
         overflow-x: scroll;
         overflow: hidden;
+        height: 100%; /* Ensure content fits within the viewport */
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
 }
 .nd {
         font-size: 15px;
@@ -80,13 +80,14 @@ body{
         margin-top: 10px;
 }
 .black {
-        background-color: #262626;
+        background-color: #0E0D21;
 }
 .card-title {
         font-size: 30px;
 }
 .card {
         font-family: "Comfortaa";
+        font-weight: bold;
         color: white;
 }
 .title {
@@ -97,29 +98,33 @@ h1{
         font-weight: bold;
         font-size: 50px;
         text-align: center;
-        color: #262626;
+        color: white;
 }
 h2{
-        font-family: "Comfortaa";
-        font-size: 50px;
-        color: #262626;
+        font-family: "Adam";
+        font-weight: bold;
+        font-size: 40px;
+        color: #0E0D21;
         text-align: center;
 }
 h3{
-        font-family: "Comfortaa";
+        font-family: "Adam";
+        font-weight: bold;
         font-size: 30px;
-        color: #262626;
+        color: #0E0D21;
         text-align: center;
 }
 h4 {
-        font-family: "Comfortaa";
-        font-size: 30px;
+        font-family: "Adam";
+        font-weight: bold;
+        font-size: 20px;
         color: white;
+        text-align: center;
 }
 .bar{
-        background-color: #1f1d1d;
+        background-color: #0E0D21;
         overflow: hidden;
-        font-family: Adam;
+        font-family: "Adam";
         font-weight: bold;
         transition: background-color 0.5s ease; color: 0.5s ease;
         position: sticky;
@@ -129,53 +134,24 @@ h4 {
 .bar a, .project a {
         float: left;
         display: block;
-        color: #f2f2f2;
+        color: white;
         text-align: center;
         text-decoration: none;
         font-size: 30px;
+        height: 50px;
 }
 .bar a:hover, .project a:hover {
-        transition: background-color 0.5s ease; color 0.5s ease;
-        background-color: white;
-        color: #262626;
+        transition: background-color 0.5s ease;
+        background-color: #0F1837;
+        color: white;
 }
 .bar .icon {
         display: none;
 }
 
-a, a:hover {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        text-decoration: none;
-        font-size: 30px;
-}
-
 .span {
      color: white;
 }
-
-/* custom scrollbar */
-::-webkit-scrollbar {
-        width: 20px;
-}
-
-::-webkit-scrollbar-track {
-background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-background-color: #d6dee1;
-border-radius: 20px;
-border: 6px solid transparent;
-background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background-color: #a8bbbf;
-}
-
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -188,59 +164,243 @@ background-color: #a8bbbf;
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-position: relative;
-width: 100%;
-height: 100%;
-text-align: center;
-transition: transform 0.8s;
-transform-style: preserve-3d;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
 }
 
 /*Bootstrap card flip CSS below!*/
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-transform: rotateY(180deg);
+        transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
-position: absolute;
-width: 100%;
-height: 100%;
--webkit-backface-visibility: hidden; /* Safari */
-backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-background-color: #bbb;
-color: black;
+        background-color: #bbb;
+        color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-background-color: dodgerblue;
-color: white;
-transform: rotateY(180deg);
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+}
+
+/* New chnges made 1/19/25 for hollow knight aesthetic */
+.hollow {
+        width: 100%;
+        height: 100%;
+        padding:0;
+        margin:0;
+        background-image: url(../img/hollow.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+}
+
+.landing {
+        width: 100%;
+        height: 100%;
+        padding:0;
+        margin:0;
+        background-image: url(../img/landing.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+}
+
+.sit {
+        width: 100%;
+        height: 100%;
+        padding:0;
+        margin:0;
+        background-image: url(../img/sit.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+}
+
+.transition-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 45%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+}
+    
+body.loaded .transition-wrapper {
+        opacity: 1;
+}
+    
+body.fade-out .transition-wrapper {
+        opacity: 0;
+}
+    
+.start {
+        font-size: 3rem;
+        letter-spacing: 4px;
+        margin-bottom: 10px;
+        user-select: none;
+        color: white;
+        font-weight: 1000;
+        font-family: "Adam";
+}
+
+.author {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        animation: blink 3s infinite;
+        user-select: none;
+        color: white;
+        font-weight: 1000;
+        font-family: "Adam";
+        margin-top: -55px;
+}
+
+.line { 
+        margin-top: -80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(180deg);
+}
+
+.uline {
+        margin-bottom: -90px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+@media (max-width: 1200px) {
+        .landing { 
+                background-position: 45% bottom;
+        }
+
+        .sit { 
+                background-position: 45% bottom;
+        }
 }
 
 @media (max-width: 800px) {
-        svg {
-                width: 15px;
-                height: 15px;
+
+        img.line-separator {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
         }
 
-        .icon {
-                width: 30px !important;
-                height: 30px !important;
+        .start {
+                padding: 2vw;
+                font-size: 5vw;
+                margin-bottom: 0px;
         }
 
-        a {
-                font-size: 18px !important;
+        .hollow { 
+                background-position: 10% center;
+        }
+}
+
+@media (max-width: 550px) {
+
+        .intro {
+                font-size: 30px !important;
         }
 
-        .card-body {
-                font-size: 15px !important;
+        .navicon {
+                opacity: 0;
         }
+
+        .line {
+                margin-top: -50px;
+        }
+
+        .uline {
+                margin-bottom: -60px;
+        }
+
+        .author {
+                margin-top: -30px;
+                font-size: 2vw;
+        }
+}
+
+/* Animations */
+@keyframes blink {
+        0%, 100% {
+                opacity: 0.2;
+        }
+        50% {
+                opacity: 1;
+        }
+}
+
+.bubbly-icon {
+        float: left;
+        margin: 15px;
+        position: relative;
+        display: block;
+        width: 50px; /* Define the size of the circle */
+        height: 50px; /* Define the size of the circle */
+        border-radius: 50%; /* Makes it circular */
+        background-color: #0F1837; /* Background color of the circle */
+        display: flex;
+        align-items: center; /* Vertically center the icon */
+        justify-content: center; /* Horizontally center the icon */
+        transition: background-color 0.3s ease;
     }
+    
+.bubbly-icon i {
+        font-size: 24px; /* Set the icon size */
+        color: white; /* Icon color */
+}
+
+.bubbly-icon:hover {
+        background-color: #0A0E28; /* Change circle color on hover */
+}
+
+.bubbly-icon:hover i {
+        color: white; /* Change icon color on hover */
+}
+
+/* Optional animation for icons (e.g., move slightly) */
+@keyframes bubbleMovement {
+        0% {
+                transform: translate(0, 0);
+        }
+        50% {
+                transform: translate(0, -10px);
+        }
+        100% {
+                transform: translate(0, 0);
+        }
+}
+
+/* Apply animation to icons */
+.bubbly-icon {
+        animation: bubbleMovement 2s infinite;
+}
+
+.intro {
+        font-size: 40px;
+        margin-bottom: 30px;
+        color: white;
+}
