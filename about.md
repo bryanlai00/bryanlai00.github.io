@@ -1,13 +1,12 @@
 ---
 layout: tab
 ---
-<div class="focus card mx-auto shadow col-md-4 p-3 mb-5 black text-center title">
-    About Me
-</div>
-<div class="focus card shadow mx-auto col-10 p-3 mb-5 black">
-<div class="card-body">
-Hi, I'm a recent December 2023 Graduate with a Bachelor of Science in both Computer Science and Applied Mathematics from Stony Brook University! I have a passion for creating innovative and user-friendly web applications that solve real-world problemsm and gained valuable experience in website development through various internships and projects. 
-</div>
+<div class="focus card shadow mx-auto col-6 p-3 mb-5 black text-center">
+<h2 class="intro"> about me: </h2>
+<h4> recent grad at stony brook university (2020-2023) </h4>
+<h4> current masters student at gtech (2024-2026) </h4>
+<h4> double majored in CS and AMS </h4> 
+<h4> SWE planning to delve into the medical field </h4>
 </div>
 <div class="focus card mx-auto shadow col-md-6 p-3 mb-5 black text-center title">
     Skills/Technologies
